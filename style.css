@@ -1,0 +1,130 @@
+
+    body {
+        position: relative;
+    }
+    
+    .certificate {
+        height: 25vh;
+        background-color: #5C5C5F;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+    }
+
+   .mt-5{
+    font-family:'Times New Roman', Times, serif;
+    font-style: inherit;
+   }
+
+    .certificate::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 10%;
+        height: 8vh;
+        background-color: #fff;
+        z-index: 99;
+        -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
+        clip-path: polygon(100% 100%, 0 0, 0 100%);
+    }
+
+    .yellow {
+        background: #ffc728;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 25px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 20px;
+        padding-top: 20px;
+        justify-content: center;
+        -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    }
+
+    .h1Certificate {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .slantedDivA {
+        
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        background: #5C5C5F;
+        margin-top: 200px !important;
+    }
+
+    .slantedDivA:after {
+        margin-top: 80px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        height: 20vh;
+        /* height:20vh; */
+        background: #ffc728;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom left;
+
+        transform: skewY(-11deg);
+        /* transform:skewX(2) */
+        ;
+    }
+
+    .main1 {
+        height: 45vh !important;
+    }
+
+    .cl {
+        margin-top: 250px !important;
+    }
+
+    .certificate-footer {
+        background-color: gray;
+        height: 7vh;
+        position:relative;
+        bottom: -90;
+        display: inline-flex;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 16;
+    
+        transform: skew(1deg, -0.8deg);
+       /* margin-top:10px;
+        margin-top:10vh; */
+        /* border: 2px solid red; */
+        }
+
+    .certificate-yellow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 3vh;
+        display: flex;
+        background-color: #ffc728;
+        width: 100%;
+        transform: skew(0deg, -1.5deg);
+        z-index: 99;
+    }
+
+  /*  .certificate-white {
+        
+        position: absolute;
+        top: -100%;
+        left: 0;
+        z-index: 999;
+        background-color: #fff;
+        height: 5vh;
+        width: 100%;
+        transform: skew(0deg, 1.5deg);
+    }  
